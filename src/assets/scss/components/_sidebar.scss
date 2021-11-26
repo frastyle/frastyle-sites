@@ -1,0 +1,95 @@
+//  ==============================================================
+//	FRASTYLE DOCS | Author: Bagas Nur P. [www.bagasnur.my.id]
+//	© 2020-2021. Made in Indonesia and licensed under (CC BY-SA 2.0).
+//  ==============================================================
+
+.sidebar {
+	&-menu {
+		max-height: 80vh;
+		min-height: 90%;
+		padding: 0 calc(var(--gap) * 2);
+		overflow: auto;
+		scrollbar-width: thin;
+		scrollbar-color: #808080;
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+		// 	Handle
+		&::-webkit-scrollbar-thumb {
+			background: #b2b2b2;
+		}
+		// 	Handle on hover
+		&::-webkit-scrollbar-thumb:hover {
+			background: #808080;
+		}
+	}
+}
+
+.list-link {
+	padding-top: var(--gap);
+	padding-bottom: calc(var(--gap) * 2);
+	& a {
+		border-left: 2px solid #f2f2f2;
+		display: block;
+		color: #161b1d;
+		padding-left: var(--gap);
+		line-height: 2rem;
+		&:hover,
+		&.active {
+			color: var(--primary);
+		}
+		&.active {
+			border-left: 2px solid;
+		}
+	}
+}
+
+//	Dropdown Button
+.dropbtn {
+	--border-button: 1px solid var(--light-5);
+	--space-button: 0.5em 1.5em;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0;
+	&::after {
+		content: '\25BE';
+		font-size: 1.5rem;
+	}
+	&:hover {
+		transform: scale(1);
+	}
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: var(--white);
+	min-width: 90%;
+	box-shadow: var(--shadow);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: var(--black);
+	padding: 9px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background: var(--light-1);
+}
+
+.show {
+	display: block;
+}
+
+@media screen and (min-width: 540px) {
+	.sidebar {
+		border-right: 2px solid var(--primary);
+	}
+}

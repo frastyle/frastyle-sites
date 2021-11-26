@@ -1,0 +1,113 @@
+//  ==============================================================
+//	FRASTYLE DOCS | Author: Bagas Nur P. [www.bagasnur.my.id]
+//	© 2020-2021. Made in Indonesia and licensed under (CC BY-SA 2.0).
+//  ==============================================================
+
+//  # Components #
+//  Use components style
+@use 'components/navbar';
+@use 'components/footer';
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1080px;
+	}
+}
+
+.logo {
+	display: flex;
+	height: 2em;
+}
+
+.gradient-blue {
+	background: linear-gradient(135deg, #3c71dd, #209fdf);
+}
+
+.header {
+	background: linear-gradient(135deg, #3c71dd, #209fdf),
+		url('../img/kawung.svg') bottom center/1800px no-repeat;
+	background-blend-mode: overlay;
+	p {
+		font-size: 1.5rem;
+	}
+}
+
+.hero {
+	background: url('../img/kawung.svg') bottom center no-repeat;
+	background-size: 1720px;
+}
+
+.temp {
+	background: url('../img/parang.svg') repeat;
+	background-size: 40%;
+	background-color: var(--dark-1);
+	background-blend-mode: overlay;
+}
+
+.button {
+	&-tertiary {
+		--bg-button: transparent;
+		--color-button: white;
+		--text-button: white;
+	}
+	&-white {
+		--bg-button: white;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+pre {
+	--bg-code: var(--dark-1);
+	--text-code: var(--light);
+	margin: 0;
+	&::-webkit-scrollbar-track {
+		margin: 0;
+	}
+}
+
+//	Add-On
+.clipboard {
+	width: 100%;
+	margin: 0;
+	border: none;
+	border-radius: 0 0 var(--corner-code) var(--corner-code);
+	&:hover {
+		transform: none;
+		box-shadow: none;
+	}
+}
+
+.preload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;
+	height: calc(100vh - 80px);
+	transition: 1s ease-out;
+	& img {
+		width: 100px;
+		height: 100px;
+		animation: rotate 1s ease-out 0.5s infinite;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hero,
+	.header {
+		background-position: bottom left;
+		background-size: 2000px;
+		background-position-x: -136px;
+	}
+}

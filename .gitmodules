@@ -1,0 +1,3 @@
+[submodule "src/views/docs"]
+	path = src/views/docs
+	url = https://github.com/frastyle/frastyle-docs.git

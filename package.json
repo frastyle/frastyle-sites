@@ -1,0 +1,52 @@
+{
+	"name": "frastyle-dokumentasi",
+	"version": "0.1.0",
+	"private": true,
+	"author": "Bagas Nur <hello.bagasnur@gmail.com> (https://bagasnur.my.id)",
+	"license": "MIT",
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"axios": "^0.21.1",
+		"caniuse-lite": "^1.0.30001243",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-feather": "^2.0.9",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.3",
+		"react-syntax-highlighter": "^15.4.3",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"sass:watch": "sass --watch --charset --no-source-map src/assets/scss:src/assets/css",
+		"style-main": "sass --charset --no-source-map --style=compressed src/assets/scss/main.scss:src/assets/css/main.min.css",
+		"style-pages": "sass --charset --no-source-map --style=compressed src/assets/scss/pages/documentation.scss:src/assets/css/pages/documentation.min.css src/assets/scss/pages/home.scss:src/assets/css/pages/home.min.css src/assets/scss/pages/other.scss:src/assets/css/pages/other.min.css",
+		"sass:compressed": "npm run style-main && npm run style-pages"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": [
+		"last 1 versions",
+		"> 0.2%",
+		"chrome >= 80",
+		"ie >= 11",
+		"edge >= 85",
+		"opera >= 70",
+		"ios >= 12",
+		"safari >= 15",
+		"firefox >= 78",
+		"samsung >= 14"
+	],
+	"devDependencies": {
+		"@mdx-js/loader": "^1.6.22",
+		"babel-loader": "8.1.0",
+		"prettier": "2.3.1"
+	}
+}

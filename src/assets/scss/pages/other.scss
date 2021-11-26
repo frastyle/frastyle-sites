@@ -1,0 +1,43 @@
+//  ==============================================================
+//	FRASTYLE DOCS | Author: Bagas Nur P. [www.bagasnur.my.id]
+//	© 2020-2021. Made in Indonesia and licensed under (CC BY-SA 2.0).
+//  ==============================================================
+
+.theme {
+	--space-card: 0;
+	h6 {
+		margin: 0 0 0.25em;
+	}
+	p {
+		margin: 0;
+	}
+}
+.image-theme {
+	position: relative;
+	border-bottom: 1px solid var(--light-2);
+	img {
+		border-radius: 1em 1em 0 0;
+		object-fit: fill;
+	}
+	a {
+		transition: 0.5s;
+		position: absolute;
+		background: hsla(197, 14%, 10%, 0.75);
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 1em 1em 0 0;
+		opacity: 0;
+	}
+	a:hover {
+		opacity: 1;
+	}
+	& ~ div {
+		border-radius: 0 0 1em 1em;
+	}
+}
