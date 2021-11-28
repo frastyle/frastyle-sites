@@ -52,7 +52,12 @@ const Router = () => {
 	const splitLocation = window.location.href.split('/');
 
 	useEffect(() => {
-		if (splitLocation[3] === '' || splitLocation[3] === 'tema' || splitLocation[3] === 'template' || splitLocation[3] === 'tentang') {
+		if (
+			splitLocation[3] === '' ||
+			splitLocation[3] === 'tema' ||
+			splitLocation[3] === 'template' ||
+			splitLocation[3] === 'tentang'
+		) {
 			getResult('1');
 		} else if (data.length === 0) {
 			getResult(splitLocation[3]);
@@ -160,11 +165,7 @@ const Router = () => {
 							from='/:version/error-500'
 							to={'/' + lastVersion.data.number + '/'}
 						/>
-						<Redirect
-							exact
-							from='/:version/*'
-							to={'/' + splitLocation[3] + '/error-404'}
-						/>
+						<Redirect from='/:version/*' to='/:version/error-404' />
 					</Switch>
 					<Footer lastVersion={lastVersion} />
 				</div>
@@ -172,7 +173,6 @@ const Router = () => {
 				<div>
 					<Navbar lastVersion={lastVersion} />
 					<Switch>
-					{console.log(data)}
 						<Route
 							exact
 							path={'/' + splitLocation[3] + '/error-404'}

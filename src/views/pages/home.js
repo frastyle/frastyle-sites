@@ -156,7 +156,7 @@ const Home = (props) => {
 							terformat dengan baik. Bahkan Anda dapat mengubah
 							gaya di setiap elemennya.
 						</p>
-						<Link to={'/' + number + '/docs/buttons'}>
+						<Link to={'/' + number + '/docs/buttons-and-links'}>
 							Menuju ke Elemen HTML{' '}
 							<Icons.ExternalLink
 								size={16}

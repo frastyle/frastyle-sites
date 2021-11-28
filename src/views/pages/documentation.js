@@ -28,9 +28,9 @@ const Documentation = (props) => {
 				.then((response) => {
 					setData(response.data);
 					returnData = response.data;
+					setErrors(false);
 				})
 				.catch(() => {
-					setloading(false);
 					setErrors(true);
 				})
 				.finally(() => {
@@ -81,16 +81,20 @@ const Documentation = (props) => {
 		const page = React.lazy(() =>
 			import(
 				`!babel-loader!@mdx-js/loader!../docs/v${number}/${link}.mdx`
+			).catch(() =>
+				import(`!babel-loader!@mdx-js/loader!../docs/404.mdx`)
 			)
 		);
 		setContent(page);
-	}, [version, number, link]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [link, number]);
 
 	return errors ? (
 		<div className='header py-3 py-m-4'>
 			<div className='container text-center white'>
 				<h1 className='bold m-0'>- 500 -</h1>
-				<b className='m-0'>Server Error</b>
+				<p className='bold'>Server Error</p>
+				<span>Coba muat ulang halaman setelah beberapa saat lagi.</span>
 			</div>
 		</div>
 	) : loading ? (
@@ -263,7 +267,7 @@ const Documentation = (props) => {
 							<p className='pt-1'>
 								Menemukan kesalahan kode atau dokumentasi? Bantu
 								kami sempurnakan dokumentasi dengan memberikan{' '}
-								<a href={'docs/' + link + '.mdx'}>
+								<a href='https://github.com/frastyle/frastyle-docs/'>
 									saran perubahan
 								</a>
 								.

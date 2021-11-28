@@ -19,10 +19,14 @@ const Contribute = () => {
 				<div className='row justify-center'>
 					<Link
 						to='//github.com/frastyle/frastyle-css'
+						target='_blank'
 						className='button-white m-1 my-m-0'>
 						Berkontribusi
 					</Link>
-					<Link to='/docs' className='button-tertiary m-1 my-m-0'>
+					<Link
+						to='//github.com/frastyle/frastyle-css/discussions/categories/ideas'
+						target='_blank'
+						className='button-tertiary m-1 my-m-0'>
 						Memberikan saran
 					</Link>
 				</div>

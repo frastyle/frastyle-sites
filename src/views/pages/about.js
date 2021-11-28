@@ -57,7 +57,7 @@ const About = () => {
 						<p>
 							Lihat siapa saja yang telah berkontribusi ke
 							Frastyle Framework.{' '}
-							<Link to='docs/elements'>
+							<Link to='//github.com/frastyle/frastyle-css/graphs/contributors'>
 								Daftar kontributor{' '}
 								<Icons.ExternalLink
 									size={16}
@@ -70,8 +70,14 @@ const About = () => {
 				</div>
 				<div className='row justify-center text-center'>
 					<div className='box-12'>
-						<a href="https://www.netlify.com" target='_blank' rel="noreferrer">
-							<img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
+						<a
+							href='https://www.netlify.com'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								src='https://www.netlify.com/img/global/badges/netlify-color-bg.svg'
+								alt='Deploys by Netlify'
+							/>
 						</a>
 					</div>
 				</div>

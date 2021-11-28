@@ -49,28 +49,34 @@ const Footer = (props) => {
 									</Link>
 								</li>
 								<li>
-									<Link to={'/' + number + '/docs/layout'}>
+									<Link
+										to={'/' + number + '/docs/responsive'}>
 										Tata Letak
 									</Link>
 								</li>
 								<li>
 									<Link
-										to={'/' + number + '/docs/typography'}>
+										to={'/' + number + '/docs/fonts-sizes'}>
 										Tipografi
 									</Link>
 								</li>
 								<li>
-									<Link to={'/' + number + '/docs/element'}>
+									<Link
+										to={
+											'/' +
+											number +
+											'/docs/buttons-and-links'
+										}>
 										Elemen HTML
 									</Link>
 								</li>
 								<li>
-									<Link to={'/' + number + '/docs/component'}>
+									<Link to={'/' + number + '/docs/alerts'}>
 										Komponen
 									</Link>
 								</li>
 								<li>
-									<Link to={'/' + number + '/docs/utilities'}>
+									<Link to={'/' + number + '/docs/shadows'}>
 										Peralatan
 									</Link>
 								</li>
@@ -85,7 +91,7 @@ const Footer = (props) => {
 									</Link>
 								</li>
 								<li>
-									<Link to='//github.com/frastyle/frastyle-css/discussions/new'>
+									<Link to='//github.com/frastyle/frastyle-css/discussions/categories/ideas'>
 										Saran & Masukan
 									</Link>
 								</li>
