@@ -101,7 +101,7 @@ const Documentation = (props) => {
 		<div className='preload'>
 			<div className='container flex-column text-center'>
 				<img src={Logo} alt='' style={{ margin: 'auto' }} />
-				<b className='mt-2'>Memuat data...</b>
+				<span className='mt-2'>Memuat data...</span>
 			</div>
 		</div>
 	) : (
@@ -259,12 +259,16 @@ const Documentation = (props) => {
 								<div className='preload'>
 									<div className='flex-column text-center'>
 										<img src={Logo} alt='' />
-										<b className='mt-2'>Memuat data...</b>
+										<span className='mt-2'>
+											Memuat data...
+										</span>
 									</div>
 								</div>
 							}>
 							<Content />
-							<p className='pt-1'>
+							<br />
+							<hr />
+							<p className='mt-1 mb-0'>
 								Menemukan kesalahan kode atau dokumentasi? Bantu
 								kami sempurnakan dokumentasi dengan memberikan{' '}
 								<a href='https://github.com/frastyle/frastyle-docs/'>

@@ -92,7 +92,7 @@ const Router = () => {
 				<div className='preload'>
 					<div className='container flex-column text-center'>
 						<img src={Logo} alt='' style={{ margin: 'auto' }} />
-						<p className='mt-2'>Memuat data...</p>
+						<span className='mt-2'>Memuat data...</span>
 					</div>
 				</div>
 			) : data.code === 200 ? (

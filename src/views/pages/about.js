@@ -41,9 +41,13 @@ const About = () => {
 						<a
 							href='https://github.com/bagasnur'
 							style={{ width: 'fit-content' }}
-							className='card-secondary d-flex items-center mx-auto mb-2 py-1'>
+							className='d-flex items-center dark mx-auto mb-2 p-1'>
 							<img
-								style={{ borderRadius: '20px' }}
+								style={{
+									borderRadius: '20px',
+									border: '1px solid var(--dark)',
+								}}
+								className='bg-white'
 								height='40px'
 								width='40px'
 								src='https://avatars.githubusercontent.com/u/44259946?v=4'

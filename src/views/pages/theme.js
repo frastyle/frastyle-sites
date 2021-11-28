@@ -48,7 +48,7 @@ const Theme = () => {
 		<div className='preload'>
 			<div className='container flex-column text-center'>
 				<img src={Logo} alt='' style={{ margin: 'auto' }} />
-				<b className='mt-2'>Memuat data...</b>
+				<span className='mt-2'>Memuat data...</span>
 			</div>
 		</div>
 	) : (
@@ -76,7 +76,10 @@ const Theme = () => {
 						<h5 className=''>Sumber Terbuka</h5>
 						<p>
 							Kode sumber terbuka dibawah{' '}
-							<a href='https://github.com/frastyle/frastyle-theme/blob/main/LICENSE'>lisensi MIT</a>.
+							<a href='https://github.com/frastyle/frastyle-theme/blob/main/LICENSE'>
+								lisensi MIT
+							</a>
+							.
 						</p>
 					</div>
 				</div>
