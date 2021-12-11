@@ -77,29 +77,32 @@ const Home = (props) => {
 			<div className='container' style={{ marginTop: '-12em' }}>
 				<div className='row justify-center'>
 					<div className='box-11 mt-2'>
-						<CodeBox lang='xml' className='shadow-large'>
-							{`< !DOCTYPE html >
-<html>
+						<CodeBox lang='xml' className='my-1 shadow-large'>
+							{`<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek Baru | Frastyle Framework</title>
-    <!-- Frastyle CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/frastyle-css/dist/css/frastyle.min.css">
+    <!-- Frastyle CSS Framework -->
+    <link rel="stylesheet" href="css/frastyle.min.css" >
+    <!-- Simvle - Frastyle Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@frastyle/simvle-theme/dist/css/simvle.min.css">
 </head>
 <body>
-    <!-- Konten anda -->
+	<!-- Konten anda -->
     <div class="container">
-		<div class="row">
-			<div class="box-12 box-m-8 box-xl-5 bg-primary white text-center m-auto p-4">
-				<h1>Halo, developer!</h1>
-				<span>
-					Terima kasih sudah menggunakan Frastyle CSS Framework, mari bersama
-					ciptakan proyek website terbaik Anda.
-				</span>
-			</div>
-		</div>
-	</div>
+        <div class="row items-center" style="height: 100vh;">
+            <div class="card box-12 box-m-8 box-xl-6 bg-primary white text-center m-auto p-4">
+            <h1>Halo, developer!</h1>
+            <span>
+                Terima kasih sudah menggunakan Frastyle CSS Framework, mari bersama
+                ciptakan proyek website terbaik Anda.
+            </span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>`}
 						</CodeBox>
@@ -138,7 +141,10 @@ const Home = (props) => {
 						<h5 className=''>Sumber Terbuka</h5>
 						<p>
 							Kode sumber terbuka dibawah{' '}
-							<a href='mit'>lisensi MIT</a>.
+							<a href='https://github.com/frastyle/frastyle-css/blob/main/LICENSE'>
+								lisensi MIT
+							</a>
+							.
 						</p>
 					</div>
 				</div>

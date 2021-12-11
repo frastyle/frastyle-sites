@@ -16,7 +16,7 @@ const codeBox = (props) => {
 
 	return (
 		<div
-			className={'bg-dark-1 my-2 ' + (props.className ?? '')}
+			className={'bg-dark-1 ' + (props.className ?? '')}
 			style={{ borderRadius: '1em' }}>
 			<Highlighter
 				language={props.lang}
