@@ -15,9 +15,11 @@
 .image-theme {
 	position: relative;
 	border-bottom: 1px solid var(--light-2);
+	height: 240px;
 	img {
 		border-radius: 1em 1em 0 0;
-		object-fit: fill;
+		object-fit: cover;
+		height: 240px;
 	}
 	a {
 		transition: 0.5s;

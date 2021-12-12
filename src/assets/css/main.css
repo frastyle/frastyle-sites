@@ -1,151 +1,152 @@
 .navbar {
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  padding: 1.5em 0;
-  top: 0;
-  transition: 0.5s;
-  -webkit-animation: 1s;
-  animation: 1s;
-  z-index: 100;
-  border-bottom: var(--light-1) solid 2px;
+	width: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	padding: 1.5em 0;
+	top: 0;
+	transition: 0.5s;
+	-webkit-animation: 1s;
+	animation: 1s;
+	z-index: 100;
+	border-bottom: var(--light-1) solid 2px;
 }
 
 .linkNavbar {
-  --link: var(--black);
-  align-self: center;
+	--link: var(--black);
+	align-self: center;
 }
 .linkNavbar a,
 .linkNavbar .active {
-  --text-link-hover: var(--primary);
-  margin-right: 2em;
-  padding: 0.5em 0;
-  font-weight: 500;
+	--text-link-hover: var(--primary);
+	margin-right: 2em;
+	padding: 0.5em 0;
+	font-weight: 500;
 }
 .linkNavbar a:hover,
 .linkNavbar .active:hover {
-  border-bottom: 2px solid var(--primary);
+	border-bottom: 2px solid var(--primary);
 }
 .linkNavbar a:last-child,
 .linkNavbar .active:last-child {
-  margin: 0;
+	margin: 0;
 }
 
 footer {
-  color: var(--dark-5);
+	color: var(--dark-5);
 }
 footer p {
-  margin: 0;
+	margin: 0;
 }
 footer h4 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 footer ul li {
-  padding: 0.5em 0;
+	padding: 0.5em 0;
 }
 footer .logo {
-  filter: grayscale(1) opacity(0.35);
+	filter: grayscale(1) opacity(0.35);
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1080px;
-  }
+	.container {
+		max-width: 1080px;
+	}
 }
 .logo {
-  display: flex;
-  height: 2em;
+	display: flex;
+	height: 2em;
 }
 
 .gradient-blue {
-  background: linear-gradient(135deg, #3c71dd, #209fdf);
+	background: linear-gradient(135deg, #3c71dd, #209fdf);
 }
 
 .header {
-  background: linear-gradient(135deg, #3c71dd, #209fdf), url("../img/kawung.svg") bottom center/1800px no-repeat;
-  background-blend-mode: overlay;
+	background: linear-gradient(135deg, #3c71dd, #209fdf),
+		url('../img/kawung.svg') bottom center/1800px no-repeat;
+	background-blend-mode: overlay;
 }
 .header p {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .hero {
-  background: url("../img/kawung.svg") bottom center no-repeat;
-  background-size: 1720px;
+	background: url('../img/kawung.svg') bottom center no-repeat;
+	background-size: 1720px;
 }
 
 .temp {
-  background: url("../img/parang.svg") repeat;
-  background-size: 40%;
-  background-color: var(--dark-1);
-  background-blend-mode: overlay;
+	background: url('../img/parang.svg') repeat;
+	background-size: 40%;
+	background-color: var(--dark-1);
+	background-blend-mode: overlay;
 }
 
 .button-tertiary {
-  --bg-button: transparent;
-  --color-button: white;
-  --text-button: white;
+	--bg-button: transparent;
+	--color-button: white;
+	--text-button: white;
 }
 .button-white {
-  --bg-button: white;
+	--bg-button: white;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 pre {
-  --bg-code: var(--dark-1);
-  --text-code: var(--light);
-  margin: 0;
+	--bg-code: var(--dark-1);
+	--text-code: var(--light);
+	margin: 0;
 }
 pre::-webkit-scrollbar-track {
-  margin: 0;
+	margin: 0;
 }
 
 .clipboard {
-  width: 100%;
-  margin: 0;
-  border: none;
-  border-radius: 0 0 var(--corner-code) var(--corner-code);
+	width: 100%;
+	margin: 0;
+	border: none;
+	border-radius: 0 0 var(--corner-code) var(--corner-code);
 }
 .clipboard:hover {
-  transform: none;
-  box-shadow: none;
+	transform: none;
+	box-shadow: none;
 }
 
 .preload {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 500px;
-  height: calc(100vh - 80px);
-  transition: 1s ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;
+	height: calc(100vh - 80px);
+	transition: 1s ease-out;
 }
 .preload img {
-  width: 100px;
-  height: 100px;
-  animation: rotate 1s ease-out 0.5s infinite;
+	width: 100px;
+	height: 100px;
+	animation: rotate 1s ease-out 0.5s infinite;
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
 }
 @media screen and (max-width: 767px) {
-  .hero,
-.header {
-    background-position: bottom left;
-    background-size: 2000px;
-    background-position-x: -136px;
-  }
+	.hero,
+	.header {
+		background-position: bottom left;
+		background-size: 2000px;
+		background-position-x: -136px;
+	}
 }

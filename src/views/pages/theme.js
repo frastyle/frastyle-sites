@@ -86,7 +86,12 @@ const Theme = () => {
 				<h3 className='text-center my-2'>Daftar Tema</h3>
 				<div className='row pb-m-3 gap-medium'>
 					{Object.keys(data.theme_list).map((i) => (
-						<div className='card box-12 box-m-6 theme shadow'>
+						<div
+							className='box-12 box-m-6 card theme shadow'
+							style={{
+								display: 'flex',
+								flexDirection: 'column',
+							}}>
 							<div className='image-theme'>
 								<img
 									src={data.theme_list[i].preview_img}
@@ -101,7 +106,9 @@ const Theme = () => {
 									Lihat Tema
 								</a>
 							</div>
-							<div className='flex-column bg-white items-stretch items-m-start justify-between p-2'>
+							<div
+								className='d-flex bg-white content-between p-2'
+								style={{ height: '100%' }}>
 								<div className='box-12 mb-1 m-0'>
 									<h5 className='mt-0'>
 										{data.theme_list[i].title}
@@ -129,7 +136,7 @@ const Theme = () => {
 						</div>
 					))}
 					<div
-						className='card flex-column box-12 box-m-6 justify-center items-center'
+						className='box-12 box-m-6 card flex-column justify-center items-center'
 						style={{ minHeight: '300px' }}>
 						<Icons.Clock size={40} color='var(--light-2)' />
 						<span className='bold light-2 mt-1'>

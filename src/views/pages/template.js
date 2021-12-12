@@ -86,7 +86,12 @@ const Template = () => {
 				<h3 className='text-center my-2'>Daftar Template</h3>
 				<div className='row pb-m-3 gap-medium'>
 					{Object.keys(data.template_list).map((i) => (
-						<div className='card box-12 box-m-6 theme shadow'>
+						<div
+							className='box-12 box-m-6 card theme shadow'
+							style={{
+								display: 'flex',
+								flexDirection: 'column',
+							}}>
 							<div className='image-theme'>
 								<img
 									src={data.template_list[i].preview_img}
@@ -96,12 +101,11 @@ const Template = () => {
 									width='100%'
 									height='100%'
 								/>
-								{/* <a target='_blank' href=''>
-									Demo Template
-								</a> */}
 							</div>
-							<div className='flex-column bg-white items-stretch items-m-start justify-between p-2'>
-								<div className='box-12 mb-1 m-0'>
+							<div
+								className='d-flex bg-white content-between p-2'
+								style={{ height: '100%' }}>
+								<div className='mb-1'>
 									<h5 className='mt-0'>
 										{data.template_list[i].title}
 									</h5>
@@ -119,7 +123,7 @@ const Template = () => {
 						</div>
 					))}
 					<div
-						className='card flex-column box-12 box-m-6 justify-center items-center'
+						className='box-12 box-m-6 card flex-column justify-center items-center'
 						style={{ minHeight: '300px' }}>
 						<Icons.Clock size={40} color='var(--light-2)' />
 						<span className='bold light-2 mt-1'>

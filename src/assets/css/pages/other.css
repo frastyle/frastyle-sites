@@ -11,10 +11,12 @@
 .image-theme {
 	position: relative;
 	border-bottom: 1px solid var(--light-2);
+	height: 240px;
 }
 .image-theme img {
 	border-radius: 1em 1em 0 0;
-	object-fit: fill;
+	object-fit: cover;
+	height: 240px;
 }
 .image-theme a {
 	transition: 0.5s;
@@ -37,5 +39,3 @@
 .image-theme ~ div {
 	border-radius: 0 0 1em 1em;
 }
-
-/*# sourceMappingURL=other.css.map */
