@@ -15,11 +15,8 @@
 .image-theme {
 	position: relative;
 	border-bottom: 1px solid var(--light-2);
-	height: 240px;
 	img {
 		border-radius: 1em 1em 0 0;
-		object-fit: cover;
-		height: 239px;
 	}
 	a {
 		transition: 0.5s;
@@ -41,5 +38,15 @@
 	}
 	& ~ div {
 		border-radius: 0 0 1em 1em;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.image-theme {
+		height: 240px;
+		img {
+			height: 239px;
+			object-fit: cover;
+		}
 	}
 }
