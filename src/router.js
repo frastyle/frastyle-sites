@@ -5,6 +5,7 @@ import Logo from './assets/img/frastyle-icon.svg';
 
 import Navbar from './views/components/navbar';
 import Footer from './views/components/footer';
+import RouteScrollToTop from './views/components/route-scroll-to-top';
 import Home from './views/pages/home';
 import Documentation from './views/pages/documentation';
 import Template from './views/pages/template';
@@ -167,6 +168,7 @@ const Router = () => {
 						/>
 						<Redirect from='/:version/*' to='/:version/error-404' />
 					</Switch>
+					<RouteScrollToTop />
 					<Footer lastVersion={lastVersion} />
 				</div>
 			) : (
@@ -189,6 +191,7 @@ const Router = () => {
 							to={'/' + splitLocation[3] + '/error-' + data.code}
 						/>
 					</Switch>
+					<RouteScrollToTop />
 					<Footer lastVersion={lastVersion} />
 				</div>
 			)}
